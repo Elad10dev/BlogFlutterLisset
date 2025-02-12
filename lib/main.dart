@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './page/login_page.dart'; // Asegúrate de importar la página de inicio de sesión.
 
 void main() {
   runApp(MyApp());
@@ -6,6 +7,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +20,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: HomePage(),
+      routes: {
+        '/login': (context) => LoginPage(), // Define la ruta para la página de inicio de sesión.
+      },
     );
   }
 }
@@ -58,10 +63,7 @@ class HomePage extends StatelessWidget {
               leading: Icon(Icons.login),
               title: Text('Iniciar Sesión'),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LoginPage()),
-                );
+                Navigator.pushNamed(context, '/login'); // Usa la ruta nombrada para la navegación.
               },
             ),
           ],
@@ -80,7 +82,6 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 children: [
                   Center(
-                    
                     child: ArticleCard(
                       imageUrl: 'https://th.bing.com/th/id/OIP.roMMM8TZKm51b1bnkLx5kAHaEo?rs=1&pid=ImgDetMain',
                       title: 'Título del Artículo 1',
@@ -141,22 +142,6 @@ class ArticleCard extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Iniciar Sesión'),
-      ),
-      body: Center(
-        child: Text('Página de inicio de sesión'),
       ),
     );
   }
