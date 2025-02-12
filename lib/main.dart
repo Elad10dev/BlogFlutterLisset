@@ -70,9 +70,11 @@ class _HomePageState extends State<HomePage> {
 
   Future<List<Map<String, String>>> fetchBookReviews() async {
     // Simula la obtención de reseñas de una API
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 6));
     return [
-      {'title': 'Libro 1', 'review': 'Reseña del libro 1...', 'imageUrl': 'https://1.bp.blogspot.com/-DsqG9OOPp7M/XvsLsTB_3fI/AAAAAAAASTQ/iu-1KGF___8uHEeg1BoikdOSUfblnKkvwCLcBGAsYHQ/s1600/Novedad%2BBolsillo%2BHarry%2BPotter%2B1.jpg'},
+      {'title': 'Harry Potter', 'review': 'MAtaron a voldermot agarrando el bolsillo', 'imageUrl': 'https://1.bp.blogspot.com/-DsqG9OOPp7M/XvsLsTB_3fI/AAAAAAAASTQ/iu-1KGF___8uHEeg1BoikdOSUfblnKkvwCLcBGAsYHQ/s1600/Novedad%2BBolsillo%2BHarry%2BPotter%2B1.jpg'},
+      {'title': 'Harry Potter', 'review': 'MAtaron a voldermot agarrando el bolsillo', 'imageUrl': 'https://1.bp.blogspot.com/-DsqG9OOPp7M/XvsLsTB_3fI/AAAAAAAASTQ/iu-1KGF___8uHEeg1BoikdOSUfblnKkvwCLcBGAsYHQ/s1600/Novedad%2BBolsillo%2BHarry%2BPotter%2B1.jpg'},
+      {'title': 'Harry Potter', 'review': 'MAtaron a voldermot agarrando el bolsillo', 'imageUrl': 'https://1.bp.blogspot.com/-DsqG9OOPp7M/XvsLsTB_3fI/AAAAAAAASTQ/iu-1KGF___8uHEeg1BoikdOSUfblnKkvwCLcBGAsYHQ/s1600/Novedad%2BBolsillo%2BHarry%2BPotter%2B1.jpg'},
       {'title': 'Libro 2', 'review': 'Reseña del libro 2...', 'imageUrl': 'https://th.bing.com/th/id/OIP.mip1hp4iAoqM2itOKDX40wHaL5?w=1618&h=2598&rs=1&pid=ImgDetMain'},
       {'title': 'Libro 3', 'review': 'Reseña del libro 3...', 'imageUrl': 'https://pbs.twimg.com/media/FfV9_b4WQAEwu8q.jpg'},
       {'title': 'Libro 4', 'review': 'Reseña del libro 4...', 'imageUrl': 'https://th.bing.com/th/id/OIP.iIWVw1T0rX7ZLR8_vvhYKgHaHY?w=1080&h=1077&rs=1&pid=ImgDetMain'},
@@ -135,8 +137,8 @@ class _HomePageState extends State<HomePage> {
                   child: ListView(
                     children: [
                       ArticleCard(
-                        imageUrl: 'https://th.bing.com/th/id/OIP.roMMM8TZKm51b1bnkLx5kAHaEo?rs=1&pid=ImgDetMain',
-                        title: 'Título del Artículo 1',
+                        imageUrl: 'https://th.bing.com/th/id/OIP.tlsC9-RPfXxHCb2xjX2n2gHaKd?rs=1&pid=ImgDetMain',
+                        title: 'LOS AVENGERS EL COMIC',
                         summary: 'Primeras palabras del artículo 1...',
                       ),
                       ArticleCard(
