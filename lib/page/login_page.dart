@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(height: 20),
                     // Email textfield
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 200.0),
                       child: Container(
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 255, 128, 170),
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(height: 20),
                     // Password textfield
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 200.0),
                       child: Container(
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 255, 128, 170),
@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(height: 20),
                     // Login button
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 300.0),
                       child: GestureDetector(
                         onTap: () {
                           ScaffoldMessenger.of(context).showSnackBar(
